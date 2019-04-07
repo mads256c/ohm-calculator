@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ohm calculator</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <script src="decimal.js/decimal.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div>
+        <div class="center">
+            <h1>Ohm calculator</h1>
+            <p>Fill out 2 fields!</p>
+            Volt (U):
+            <input type="text" id="volt"><br><br>
+
+            Amp (I):
+            <input type="text" id="ampere"><br><br>
+
+            Ohm (R):
+            <input type="text" id="ohm"><br><br>
+
+            Watt (P):
+            <input type="text" id="watt"><br><br>
+
+            <button onclick="clearWork()">Clear</button>
+            <button onclick="calculate()">Calculate!</button>
+        </div>
+
+
+        <p class="help">
+            Press ESC to clear and ENTER to calculate.<br>
+            Press Q/I/R/Z to switch to the different inputs, if you hold shift it clears the input instead.
+        </p>
+
+
+        <div class="author">
+            Made by Mads Mogensen<br>
+            <a href="https://github.com/mads256c/ohm-calculator">GitHub</a>
+        </div>
+    </div>
+
+    <script src="calc.js"></script>
+</body>
+
+</html>
